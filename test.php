@@ -1,10 +1,15 @@
 <?php
-$name = "Bangladesh";
-$age = 21;
-$word = "age";
-$question = "How are you?";
-
-echo $$word;
+define('PI', 3.14159);
+$task = 'Read';
+echo $task;
 echo "\n";
-echo "Hello $name $question\n";
-echo "Hello {$name} {$question}";
+$task = 'Write';
+echo $task;
+echo "\n";
+
+//echo "Value of PI = {PI}".PI;
+echo constant('PI');
+
+$constant = 'constant';
+
+echo "Value of PI = {$constant('PI')}";
