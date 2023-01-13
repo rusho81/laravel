@@ -1,15 +1,6 @@
 <?php
-define('PI', 3.14159);
-$task = 'Read';
-echo $task;
-echo "\n";
-$task = 'Write';
-echo $task;
-echo "\n";
-
-//echo "Value of PI = {PI}".PI;
-echo constant('PI');
-
-$constant = 'constant';
-
-echo "Value of PI = {$constant('PI')}";
+$fname = 'Isac';
+$lname = 'Neuton';
+echo "His firts name is ".$fname." and his last name is ".$lname."\n";
+echo "His firts name is {$fname} and his last name is {$lname}\n";
+printf ("His firts name is %s and his last name is %s\n", strtoupper($fname),strrev($lname));
