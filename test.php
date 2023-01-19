@@ -24,44 +24,30 @@ echo "\n";
 $numberInWord = (12 == $n)? "Twelve" : (10 == $n? "Ten" : "A Number");
 echo $numberInWord;
 
-echo "\n";
+echo "\n";*/
 
-if($n % 2 == 0){
+$n = 12;
+if ($n%2==0){
     echo "Even Number";
 }else{
     echo "Odd Number";
 }
-echo "\n";
 
-$result = $n % 2 == 0 ? "Even Number" : "Odd Number";
-echo $result;*/
-
-/*$n = 12;
-$r = $n % 2;
-
-switch ($r){
+echo PHP_EOL;
+if($n%2==0):
+    echo "Even Number";
+    echo PHP_EOL;
+    echo "Some Text";
+else:
+    echo "Odd Number";
+    echo PHP_EOL;
+    echo "Some Text";
+endif;
+echo PHP_EOL;
+switch($n%2==0):
     case 0:
-        echo "{$n} is an even number \n";
-        break;
+    echo "Even number";
+    break;
     default:
-        echo "{$n} is a odd number \n";
-}*/
-
-$color = "red";
-switch ($color){
-    /*case 'red':
-        echo "Red is our favourite color";
-        break;
-    case 'green':
-        echo "Green is our favourite color";
-        break;*/
-    case 'red':
-    case 'green':
-        echo ucwords($color)." is our favourite color";
-        break;
-    case 'blue':
-        echo "Blue is not our favourite color";
-        break;
-    default:
-        echo "This color is ok";    
-}
+    echo "Odd Number";
+endswitch;
