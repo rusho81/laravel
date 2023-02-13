@@ -6,6 +6,8 @@ function evenOdd(int $num){
     }
     return "Odd Number";
 }
+echo evenOdd(15);
+echo PHP_EOL;
 
 //2. 1+2+3...…….100  Write a loop to calculate the summation of the series
 $result = 0;
