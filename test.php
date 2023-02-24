@@ -1,5 +1,5 @@
 <?php
-// $random = array("a"=>12, "b">=45, "c"=>34,"d"=>22,"e"=>77, 
+// $random = array("a"=>12, "b">=45, "c"=>34,"d"=>22,"e"=>77,
 // "f"=>31, 12=>78, "g"=>87);
 
 // $arraySlice = array_slice($fruits, 2,-1,true);
@@ -30,10 +30,9 @@
 // ksort($fruits);
 // print_r($fruits);
 // foreach($fruits as $fruits){
-    //     echo $fruits."\n";
-    // }
-    
-    
+//     echo $fruits."\n";
+// }
+
 // $fruits =  array('a'=>'apple', 'b'=>'banaba', 'f'=>'orange', 'grape', 'barries', 'mango');
 // $numbers = array(2,45,68,3,34,'98',74);
 // if(in_array(98, $numbers)){
@@ -106,48 +105,55 @@
 // echo $string;
 // $arr = array('apple','banana','cherry');
 // echo implode(',',$arr);echo $_SERVER['PHP_SELF'];
-class RGB{
+class RGB
+{
     private $color;
     private $red;
     private $green;
     private $blue;
-    function __construct($colorCode = '')
+    public function __construct($colorCode = '')
     {
-        $this->color = ltrim($colorCode,'#');
+        $this->color = ltrim($colorCode, '#');
         $this->parseColor();
     }
-    function getColor(){
+    public function getColor()
+    {
         return $this->color;
     }
-    function getRGBColor(){
+    public function getRGBColor()
+    {
         return array($this->red, $this->green, $this->blue);
     }
-    function readRGBColor(){
+    public function readRGBColor()
+    {
         echo "Red={$this->red}\nGreen={$this->green}\nBlue= {$this->blue}";
     }
-    function setColor($colorCode){
-        $this->color = ltrim($colorCode,"#");
+    public function setColor($colorCode)
+    {
+        $this->color = ltrim($colorCode, "#");
         $this->parseColor();
     }
-    function getRed(){
+    public function getRed()
+    {
         return $this->red;
     }
-    function getGreen(){
+    public function getGreen()
+    {
         return $this->green;
     }
-    function getBlue(){
+    public function getBlue()
+    {
         return $this->blue;
     }
-    private function parseColor(){
-        if($this->color){
-            list($this->red, $this->green, $this->blue) = sscanf($this->color,'%02x%02x%02x');
-        }else{
-            list($this->red, $this->green, $this->blue) = array(0,0,0);
+    private function parseColor()
+    {
+        if ($this->color) {
+            list($this->red, $this->green, $this->blue) = sscanf($this->color, '%02x%02x%02x');
+        } else {
+            list($this->red, $this->green, $this->blue) = array(0, 0, 0);
         }
-        
+
     }
 }
 $myColor = new RGB("#ff0000");
-$myColor->getColor();
-
-
+$myColor->readRGBColor();

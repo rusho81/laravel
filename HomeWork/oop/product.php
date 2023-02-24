@@ -1,5 +1,6 @@
 <?php
-class Product{
+class Product
+{
     private $name;
     private $price;
     private $description;
@@ -9,10 +10,11 @@ class Product{
         $this->price = $productPrice;
         $this->description = $productDes;
     }
-    public function display_info(){
-        echo "Product Name: {$this->name}".PHP_EOL;
-        echo "Product Price: {$this->price}".PHP_EOL;
-        echo "Product Description: {$this->description}".PHP_EOL;
+    public function display_info()
+    {
+        echo "Product Name: {$this->name}" . PHP_EOL;
+        echo "Product Price: {$this->price}" . PHP_EOL;
+        echo "Product Description: {$this->description}" . PHP_EOL;
     }
 }
 
