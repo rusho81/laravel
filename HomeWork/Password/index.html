@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <style>
+        body {
+            margin-top: 50px;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="column column-60 column-offset-20">
+                    <h1>Password Generator</h1>
+                    <form action="generate_password.php" method="post">
+                        <label for="len">Number of character:</label>
+                        <input type="number" id="len" name="len" min="8" max="32" required><br>
+                        <label for="spchar">Special Character?</label>
+                        <input type="checkbox" id="spchar" name="spchar" value="1">
+                        <label for="num">Want Numbers?</label>
+                        <input type="checkbox" id="numb" name="num" value="1"><br>
+                        <button type="submit">Password</button>
+                    </form>
+                    <footer><p>Created By Quazi Tariqul Alam</p></footer>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
