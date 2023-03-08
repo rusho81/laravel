@@ -1,37 +1,68 @@
 <?php
-class Car{
-    private $make;
-    private $model;
-    private $year;
-    function __construct($make, $model, $year){
-        $this->make = $make;
-        $this->model = $model;
-        $this->year = $year;
+// $entries = scandir(getcwd());
+// foreach ($entries as $entry) {
+//     if ("." != $entry && ".." != $entry) {
+//         if (is_dir($entry)) {
+//             echo "[d] {$entry}\n";
+//         } else {
+//             echo "[f] {$entry}\n";
+//         }
+//     }
+// }
+
+// function countDir($dir) {
+//     $count = 0;
+//     $entries = scandir($dir);
+//     foreach ($entries as $entry) {
+//         if ("." != $entry && ".." != $entry) {
+//             if (is_dir($entry)) {
+//                 $count ++;
+//             }
+//         }
+//     }
+//     return $count;
+// }
+// echo countDir(getcwd());
+class MotorCycle {
+    private $parameters;
+    function __construct($displacement, $capacity, $milage) {
+        $this->parameters = [];
+        $this->parameters['displacement'] = $displacement;
+        $this->parameters['capacity'] = $capacity;
+        $this->parameters['milage'] = $milage;
     }
-    function get_make(){
-        return $this->make;
+    // function getDisplacement() {
+    //     return $this->parameters['displacement'];
+    // }
+    // function setDisplacement($displacement) {
+    //     $this->parameters['displacement'] = $displacement;
+    // }
+    function __isset($name) {
+        if (!isset($this->parameters[$name])) {
+            echo "{$name} not found\n";
+            return false;
+        }
+        return true;
     }
-    function get_model(){
-        return $this->model;
+    function __unset($name) {
+        print_r($this->parameters);
+        unset($this->parameters[$name]);
+        print_r($this->parameters);
     }
-    function get_year(){
-        return $this->year;
+    function __get($name) {
+        echo $this->parameters[$name];
     }
-    function set_make($make){
-         $this->make= $make;
-    }
-    function set_model($model){
-         $this->model=$model;
-    }
-    function set_year($year){
-         $this->year=$year;
-    }
-    function display_info(){
-        echo "Car make:{$this->make}\nCar model:{$this->model}\nCar year:{$this->year}\n";
+    function __set($name, $value) {
+        echo $this->parameters[$name] = $value;
     }
 }
-$car = new Car("Toyota", "Corolla", 2015);
-$car->display_info();
-$car->set_make("Honda");
-$car->set_model("Civic");
-$car->display_info();
+
+$pulser = new MotorCycle('1500cc', '16', '40kmps');
+
+if (isset($pulser->tiresize)) {
+    // $pulser->tiresize;
+    echo "Found\n";
+} else {
+    echo "Not Found\n";
+}
+unset($pulser->milage);
