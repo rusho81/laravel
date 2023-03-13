@@ -1,0 +1,63 @@
+[12-Mar-2023 08:03:01 Asia/Dhaka] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /home/rusho/Documents/laravel/exception.php:92
+Stack trace:
+#0 {main}
+  thrown in /home/rusho/Documents/laravel/exception.php on line 92
+[12-Mar-2023 08:04:44 Asia/Dhaka] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /home/rusho/Documents/laravel/exception.php:92
+Stack trace:
+#0 {main}
+  thrown in /home/rusho/Documents/laravel/exception.php on line 92
+[12-Mar-2023 08:07:17 Asia/Dhaka] PHP Fatal error:  Uncaught DivisionByZeroError: Division by zero in /home/rusho/Documents/laravel/exception.php:92
+Stack trace:
+#0 {main}
+  thrown in /home/rusho/Documents/laravel/exception.php on line 92
+[12-Mar-2023 08:11:50 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: substr(): Argument #1 ($string) must be of type string, array given in /home/rusho/Documents/laravel/exception.php:91
+Stack trace:
+#0 /home/rusho/Documents/laravel/exception.php(91): substr()
+#1 {main}
+  thrown in /home/rusho/Documents/laravel/exception.php on line 91
+[12-Mar-2023 08:46:49 Asia/Dhaka] This is an error message
+[12-Mar-2023 08:48:49 Asia/Dhaka] This is an error message 2
+[12-Mar-2023 08:56:20 Asia/Dhaka] This is an error message 3
+[12-Mar-2023 08:57:49 Asia/Dhaka] This is an error message 4
+[12-Mar-2023 08:59:47 Asia/Dhaka] This is an error message 4
+[12-Mar-2023 09:15:29 Asia/Dhaka] PHP Warning:  error_log(): Multiple or malformed newlines found in additional_header in /home/rusho/Documents/laravel/exception.php on line 103
+[12-Mar-2023 09:17:42 Asia/Dhaka] PHP Warning:  error_log(): Multiple or malformed newlines found in additional_header in /home/rusho/Documents/laravel/exception.php on line 103
+[12-Mar-2023 09:29:16 Asia/Dhaka] PHP Warning:  error_log(): Multiple or malformed newlines found in additional_header in /home/rusho/Documents/laravel/exception.php on line 103
+[12-Mar-2023 09:29:16 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Call to undefined function now() in /home/rusho/Documents/laravel/exception.php:104
+Stack trace:
+#0 {main}
+  thrown in /home/rusho/Documents/laravel/exception.php on line 104
+[12-Mar-2023 09:29:42 Asia/Dhaka] PHP Fatal error:  Uncaught ArgumentCountError: date() expects at least 1 argument, 0 given in /home/rusho/Documents/laravel/exception.php:104
+Stack trace:
+#0 /home/rusho/Documents/laravel/exception.php(104): date()
+#1 {main}
+  thrown in /home/rusho/Documents/laravel/exception.php on line 104
+[12-Mar-2023 09:30:01 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Call to undefined function datetime() in /home/rusho/Documents/laravel/exception.php:104
+Stack trace:
+#0 {main}
+  thrown in /home/rusho/Documents/laravel/exception.php on line 104
+[12-Mar-2023 09:43:35 Asia/Dhaka] PHP Warning:  error_log(/etc/error.txt): Failed to open stream: Permission denied in /home/rusho/Documents/laravel/exception.php on line 104
+[13-Mar-2023 06:27:23 Asia/Dhaka] PHP Warning:  move_uploaded_file(uploads/idea.png): Failed to open stream: No such file or directory in /home/rusho/Documents/laravel/assignment/FileUploadProject/upload.php on line 48
+[13-Mar-2023 06:27:23 Asia/Dhaka] PHP Warning:  move_uploaded_file(): Unable to move &quot;/tmp/phpfB4cD0&quot; to &quot;uploads/idea.png&quot; in /home/rusho/Documents/laravel/assignment/FileUploadProject/upload.php on line 48
+[13-Mar-2023 09:20:42 Asia/Dhaka] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /home/rusho/Documents/laravel/assignment/FileUploadProject/upload.php on line 49
+[13-Mar-2023 09:24:43 Asia/Dhaka] PHP Fatal error:  Uncaught ArgumentCountError: date() expects at least 1 argument, 0 given in /home/rusho/Documents/laravel/webTest.php:2
+Stack trace:
+#0 /home/rusho/Documents/laravel/webTest.php(2): date()
+#1 {main}
+  thrown in /home/rusho/Documents/laravel/webTest.php on line 2
+[13-Mar-2023 09:25:18 Asia/Dhaka] PHP Fatal error:  Uncaught ArgumentCountError: time() expects exactly 0 arguments, 1 given in /home/rusho/Documents/laravel/webTest.php:2
+Stack trace:
+#0 /home/rusho/Documents/laravel/webTest.php(2): time()
+#1 {main}
+  thrown in /home/rusho/Documents/laravel/webTest.php on line 2
+[13-Mar-2023 21:13:47 Asia/Dhaka] PHP Warning:  Undefined array key "REQUEST_METHOD" in /home/rusho/Documents/laravel/assignment/FileUploadProject/upload.php on line 2
+[13-Mar-2023 21:25:24 Asia/Dhaka] PHP Parse error:  syntax error, unexpected token "}" in /home/rusho/Documents/laravel/assignment/FileUploadProject/upload.php on line 9
+[13-Mar-2023 21:33:21 Asia/Dhaka] PHP Warning:  Array to string conversion in /home/rusho/Documents/laravel/assignment/FileUploadProject/upload.php on line 8
+[13-Mar-2023 21:52:00 Asia/Dhaka] PHP Warning:  Undefined variable $picture in /home/rusho/Documents/laravel/assignment/FileUploadProject/upload.php on line 7
+[13-Mar-2023 22:16:16 Asia/Dhaka] PHP Warning:  Undefined variable $data in /home/rusho/Documents/laravel/assignment/FileUploadProject/upload.php on line 23
+[13-Mar-2023 22:16:16 Asia/Dhaka] PHP Fatal error:  Uncaught TypeError: fputcsv(): Argument #2 ($fields) must be of type array, null given in /home/rusho/Documents/laravel/assignment/FileUploadProject/upload.php:23
+Stack trace:
+#0 /home/rusho/Documents/laravel/assignment/FileUploadProject/upload.php(23): fputcsv()
+#1 {main}
+  thrown in /home/rusho/Documents/laravel/assignment/FileUploadProject/upload.php on line 23
+[13-Mar-2023 22:35:22 Asia/Dhaka] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/rusho/Documents/laravel/assignment/FileUploadProject/users.php on line 45
