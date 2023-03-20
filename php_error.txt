@@ -61,3 +61,59 @@ Stack trace:
 #1 {main}
   thrown in /home/rusho/Documents/laravel/assignment/FileUploadProject/upload.php on line 23
 [13-Mar-2023 22:35:22 Asia/Dhaka] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home/rusho/Documents/laravel/assignment/FileUploadProject/users.php on line 45
+[15-Mar-2023 09:53:11 Asia/Dhaka] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /tmp/temp-lveiosor.php on line 7
+[15-Mar-2023 09:53:23 Asia/Dhaka] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /tmp/temp-smvwk.php on line 7
+[15-Mar-2023 09:53:34 Asia/Dhaka] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /tmp/temp-blrzirps.php on line 7
+[15-Mar-2023 09:53:53 Asia/Dhaka] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /tmp/temp-aihhjd.php on line 7
+[16-Mar-2023 09:29:08 Asia/Dhaka] PHP Deprecated:  Return type of Symfony\Component\Console\Helper\HelperSet::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /usr/share/php/Symfony/Component/Console/Helper/HelperSet.php on line 104
+[16-Mar-2023 09:40:06 Asia/Dhaka] PHP Deprecated:  Return type of Symfony\Component\Console\Helper\HelperSet::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /usr/share/php/Symfony/Component/Console/Helper/HelperSet.php on line 104
+[16-Mar-2023 09:40:37 Asia/Dhaka] PHP Fatal error:  Uncaught ArgumentCountError: array_merge() does not accept unknown named parameters in /usr/share/php/Composer/DependencyResolver/DefaultPolicy.php:84
+Stack trace:
+#0 [internal function]: array_merge()
+#1 /usr/share/php/Composer/DependencyResolver/DefaultPolicy.php(84): call_user_func_array()
+#2 /usr/share/php/Composer/DependencyResolver/Solver.php(387): Composer\DependencyResolver\DefaultPolicy->selectPreferredPackages()
+#3 /usr/share/php/Composer/DependencyResolver/Solver.php(740): Composer\DependencyResolver\Solver->selectAndInstall()
+#4 /usr/share/php/Composer/DependencyResolver/Solver.php(231): Composer\DependencyResolver\Solver->runSat()
+#5 /usr/share/php/Composer/Installer.php(489): Composer\DependencyResolver\Solver->solve()
+#6 /usr/share/php/Composer/Installer.php(232): Composer\Installer->doInstall()
+#7 /usr/share/php/Composer/Command/RequireCommand.php(248): Composer\Installer->run()
+#8 /usr/share/php/Composer/Command/RequireCommand.php(205): Composer\Command\RequireCommand->doUpdate()
+#9 /usr/share/php/Symfony/Component/Console/Command/Command.php(255): Composer\Command\RequireCommand->execute()
+#10 /usr/share/php/Symfony/Component/Console/Application.php(934): Symfony\Component\Console\Command\Command->run()
+#11 /usr/share/php/Symfony/Component/Console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#12 /usr/share/php/Composer/Console/Application.php(281): Symfony\Component\Console\Application->doRun()
+#13 /usr/share/php/Symfony/Component/Console/Application.php(149): Composer\Console\Application->doRun()
+#14 /usr/share/php/Composer/Console/Application.php(113): Symfony\Component\Console\Application->run()
+#15 /usr/share/php/Composer/Command/GlobalCommand.php(101): Composer\Console\Application->run()
+#16 /usr/share/php/Symfony/Component/Console/Application.php(934): Composer\Command\GlobalCommand->run()
+#17 /usr/share/php/Symfony/Component/Console/Application.php(273): Symfony\Component\Console\Application->doRunCommand()
+#18 /usr/share/php/Composer/Console/Application.php(281): Symfony\Component\Console\Application->doRun()
+#19 /usr/share/php/Symfony/Component/Console/Application.php(149): Composer\Console\Application->doRun()
+#20 /usr/share/php/Composer/Console/Application.php(113): Symfony\Component\Console\Application->run()
+#21 /usr/bin/composer(62): Composer\Console\Application->run()
+#22 {main}
+  thrown in /usr/share/php/Composer/DependencyResolver/DefaultPolicy.php on line 84
+[16-Mar-2023 09:41:49 Asia/Dhaka] PHP Deprecated:  Return type of Symfony\Component\Console\Helper\HelperSet::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /usr/share/php/Symfony/Component/Console/Helper/HelperSet.php on line 104
+[16-Mar-2023 09:42:14 Asia/Dhaka] PHP Deprecated:  Return type of Symfony\Component\Console\Helper\HelperSet::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /usr/share/php/Symfony/Component/Console/Helper/HelperSet.php on line 104
+[16-Mar-2023 09:42:32 Asia/Dhaka] PHP Deprecated:  Return type of Symfony\Component\Console\Helper\HelperSet::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /usr/share/php/Symfony/Component/Console/Helper/HelperSet.php on line 104
+[16-Mar-2023 09:44:34 Asia/Dhaka] PHP Deprecated:  Return type of Symfony\Component\Console\Helper\HelperSet::getIterator() should either be compatible with IteratorAggregate::getIterator(): Traversable, or the #[\ReturnTypeWillChange] attribute should be used to temporarily suppress the notice in /usr/share/php/Symfony/Component/Console/Helper/HelperSet.php on line 104
+[17-Mar-2023 14:11:00 Asia/Dhaka] PHP Warning:  require(/home/rusho/Documents/laravel/blog1/vendor/autoload.php): Failed to open stream: No such file or directory in /home/rusho/Documents/laravel/blog1/artisan on line 18
+[17-Mar-2023 14:11:00 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rusho/Documents/laravel/blog1/vendor/autoload.php' (include_path='.:/usr/share/php') in /home/rusho/Documents/laravel/blog1/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/rusho/Documents/laravel/blog1/artisan on line 18
+[17-Mar-2023 14:11:41 Asia/Dhaka] PHP Warning:  require(/home/rusho/Documents/laravel/blog1/vendor/autoload.php): Failed to open stream: No such file or directory in /home/rusho/Documents/laravel/blog1/artisan on line 18
+[17-Mar-2023 14:11:41 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rusho/Documents/laravel/blog1/vendor/autoload.php' (include_path='.:/usr/share/php') in /home/rusho/Documents/laravel/blog1/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/rusho/Documents/laravel/blog1/artisan on line 18
+[17-Mar-2023 14:12:32 Asia/Dhaka] PHP Warning:  require(/home/rusho/Documents/laravel/blog1/vendor/autoload.php): Failed to open stream: No such file or directory in /home/rusho/Documents/laravel/blog1/artisan on line 18
+[17-Mar-2023 14:12:32 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rusho/Documents/laravel/blog1/vendor/autoload.php' (include_path='.:/usr/share/php') in /home/rusho/Documents/laravel/blog1/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/rusho/Documents/laravel/blog1/artisan on line 18
+[17-Mar-2023 16:29:53 Asia/Dhaka] PHP Warning:  require(/home/rusho/Documents/laravel/blog1/vendor/autoload.php): Failed to open stream: No such file or directory in /home/rusho/Documents/laravel/blog1/artisan on line 18
+[17-Mar-2023 16:29:53 Asia/Dhaka] PHP Fatal error:  Uncaught Error: Failed opening required '/home/rusho/Documents/laravel/blog1/vendor/autoload.php' (include_path='.:/usr/share/php') in /home/rusho/Documents/laravel/blog1/artisan:18
+Stack trace:
+#0 {main}
+  thrown in /home/rusho/Documents/laravel/blog1/artisan on line 18
