@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Module Twelve Assignment</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <h1>BMI Calculator</h1>
+            <form action="">
+                <input type="number" id="weightInput" placeholder="Enter Weight(kg)">
+                <input type="number" id="heightInput" placeholder="Enter Height(m)">
+                <button id="calculateBtn">BMI Calculator</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        let box = document.querySelector('.box');
+        let weight = document.querySelector('#weightInput');
+        let height = document.querySelector('#heightInput');
+        let submit = document.querySelector('#calculateBtn');
+        let p = document.createElement('p');
+
+        submit.addEventListener('click', function(event) {
+            event.preventDefault();
+            if(weight.value === '' || height.value === ''){
+                alert('Input field cannot be empty!');
+            }else if (weight.value <= 0 || height.value <= 0) {
+                alert('Input value must be greater than zero');
+            }else{
+                let inputWeight = weight.value;
+                let inputHeight = height.value;
+                let BMI = inputWeight / (inputHeight * inputHeight);
+                let formattedNum = BMI.toFixed(2); // Output: "3.14"
+                p.textContent = `Your BMI is: ${formattedNum}`;
+                box.insertAdjacentElement('beforeend', p);   
+            }
+        });
+    </script>
+</body>
+</html>
