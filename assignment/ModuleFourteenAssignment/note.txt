@@ -1,0 +1,3 @@
+To answer the questens from 1 to 6 I created Test controller in my project and use it, while I directly
+use the web.php file to answer the question 7. Then, I put all my answer in a single text file, 
+assignment.txt.

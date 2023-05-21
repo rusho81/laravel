@@ -1,0 +1,49 @@
+class Test extends Controller
+{
+    // Question 1:
+    function getName(Request $request) {
+        $name = $request->get('name');
+    }
+
+    // Question 2:
+    function getHeader(Request $request) {
+        $userAgent = $request->header('User-Agent');
+    }
+
+    // Question 3:
+    function books(Request $request) {
+        $page = $request->query('page');
+    }
+
+    // Question 4:
+    function getJSON():JsonResponse{
+        $msg = "Success";
+        $data = ['name' => 'Johb Doe', 'age' =>25];
+        return response()->json(['message' => $msg, 'data' => $data]);
+    }
+
+    // Question 5:
+    function DemoAction(Request $request) {
+        $img = $request->file('avatar');
+        $img->move(public_path('uploads'), $img->getClientOriginalName());
+    }
+
+    // Question 6:
+    function retriveCookei(Request $request) {
+        $rememberToken = $request->cookie('remember_token');
+        if(!isset($rememberToken)){
+            $rememberToken = "";
+        }
+    }
+}
+
+
+	// Question 7:
+	Route::post('/submit', function(Request $request):JsonResponse{
+	   $email = $request->get('email');
+	   $success = true;
+	   return response()->json(['success' => $success, 'message' => "Form submitted successfully."]);
+});
+
+
+

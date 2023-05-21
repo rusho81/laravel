@@ -1,17 +1,47 @@
 <?php
-$filename = 'data.csv';
-$file = fopen($filename, 'w');
+class StringUtility{
+  private $string;
+  private $search;
+  function __construct($string)
+  {
+    $this->string = $string;
+  }
+  
+  function search($string){
+    $this->search = $string;
+    return $this;
+  }
 
-$header = array('Name', 'Email', 'Phone');
-fputcsv($file, $header);
+  function replace($string) {
+    if(!isset($this->search)) {
+      throw new Exception("Nothing to Replace");
+    }
+    $this->string = str_replace($this->search, $string, $this->string);
+    $this->search="";
+    return $this;
+  }
+  
+  function upperCase() {
+    $this->string = strtoupper($this->string);
+    return $this;
+  }
 
-$data = array(
-  array('John Doe', 'johndoe@example.com', '555-555-1212'),
-  array('Jane Smith', 'janesmith@example.com', '555-555-2121'),
-);
+  function lowerCase() {
+    $this->string = strtolower($this->string);
+    return $this;
+  }
 
-foreach ($data as $row) {
-  fputcsv($file, $row);
+  function print() {
+    echo $this->string;
+  }
 }
 
-fclose($file);
+$s = new StringUtility("Hello World");
+$s->search("World")
+->replace("Earth")
+->search("Hello")
+->replace("Hi")
+->upperCase()
+->lowerCase()
+->print();
+
