@@ -1,0 +1,8 @@
+Task 1: Request Validation = see the FormValidation.php controller.
+Task 2: Request Redirect = see the web.php file.
+Task 3: Global Middleware = see the LogRequest middleware and Karnel.php file
+Task 4: Route Middleware = see the web.php file and corresponding DemoController.php and  AuthMiddleware.php file.
+Task 5: Controller = see the Web.php file and ProductController.php file.
+Task 6: Single Action Controller = see the ContactController.php file.
+Task 7: Resource Controller = see the Web.php file.
+Task 8: Blade Template Engine = see the Web.php file the url is 'http://localhost/welcome'
